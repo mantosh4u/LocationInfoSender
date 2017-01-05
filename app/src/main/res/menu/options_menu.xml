@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MainActivity">
+
+    <!-- Both items should be displayed always if possible so that user can use it quickly -->
+    <item android:id="@+id/search_contact"
+          android:title="@string/search_title"
+          android:icon="@android:drawable/ic_search_category_default"
+          app:showAsAction="collapseActionView|ifRoom"
+          app:actionViewClass="android.support.v7.widget.SearchView" />
+    <item
+        android:id="@+id/addnew_contact"
+        android:title="@string/add_title"
+        android:icon="@android:drawable/ic_input_add"
+        app:showAsAction="collapseActionView|ifRoom" />
+
+</menu>

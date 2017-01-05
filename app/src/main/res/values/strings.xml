@@ -1,0 +1,84 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">LocationInfoSender</string>
+    <string name="action_settings">Settings</string>
+    <string name="result_summray">All Permission Granted!!</string>
+
+    <!-- Preference Menu XML and resource id -->
+
+    <!-- Duration Between Consecutive SMS -->
+    <string name="sms_frequency_key">sms_frequency</string>
+    <string name="sms_frequency_title">Duration Between Consecutive SMS</string>
+    <string name="screen_frequency_summary">SMS would be Send After Every <xliff:g id="sms_frequency">%1$s</xliff:g></string>
+
+    <!-- List Of Configured Contacts -->
+    <string name="contact_list_key">contact_list</string>
+    <string name="contact_list_title">List Of Contacts</string>
+    <string name="contact_list_summary">SMS would be Send To All Contacts In List</string>
+
+    <!-- Messenger Type -->
+    <string name="messenger_type_selection_key">messenger_type</string>
+    <string name="messenger_type_selection_title">Select Messenger</string>
+    <string name="messenger_type_selection_summary">Your Selected Messenger is <xliff:g id="app_name">%1$s</xliff:g></string>
+    <!--string name="messenger_type_selection_summary">Location information would be
+        sent to configured user using selected messenger application.</string> !-->
+
+    <!-- -->
+    <string name="whether_to_send_SMS_key">whether_to_send_SMS_key</string>
+    <string name="whether_to_send_SMS_title">Whether To Send SMS</string>
+    <string name="whether_to_send_SMS_summary">This would determine whether SMS should be
+        sent or not as it may cost to user.By default it would be true.</string>
+
+    <string name="action_add">Add</string>
+    <string name="action_refresh">Refresh</string>
+
+    <string name="name">Name</string>
+    <string name="phoneNumber">PhoneNumber</string>
+    <string name="emailAddress">EmailAddress</string>
+    <string name="postalAddress">PostalAddress</string>
+
+    <string name="contact_entry_title">Add</string>
+    <string name="contact_entry">Provide Complete Information</string>
+    <string name="delete_entry">Delete</string>
+
+    <string name="edit_option_title">Edit</string>
+    <string name="edit_option">Edit Information</string>
+    <string name="edit_button">Edit</string>
+
+    <string name="correct">Successfully Completed</string>
+    <string name="incorrect">Failed Operation</string>
+
+    <string name="result_add_button">KeyForAddButton</string>
+    <string name="result_delete_button">KeyForDeleteButton</string>
+
+    <!-- How service was started -->
+    <string name="start_service">Service Started</string>
+    <string name="stop_service">Service Stopped</string>
+    <string name="already_service_started">Service Already Started</string>
+    <string name="cannt_start_service">Can Not Start Service, Restart Application</string>
+
+    <!-- How status bar should be updated with the current information -->
+    <string name="status_bar_header">Current Location:</string>
+
+    <!-- To display warning message on MainActivity for GPS & Celluar Data ON  -->
+    <string name="location_service_on">To continue, let your device\n
+        turn on location using Google\'s\n
+        location service,press OK to change\n
+        this setting.</string>
+    <string name="cellulardata_warning_message">Check Internet!!</string>
+    <string name="cellulardata_on">To continue, let your device\n
+        turn on Cellular data,press OK to go to home page of\n
+        Setting window and then go to\n
+        Settings>Data usage>Celluar data.</string>
+
+    <string name="send_to">Sharing text to..</string>
+    <string name="retart_service">"Restarting Service</string>
+
+    <string name="key_selected_app">com.samanyu.locationinfosender.keySelectedApp</string>
+
+    <string name="search_hint">Search Number</string>
+
+    <string name="search_title">Search</string>
+    <string name="add_title">Add</string>
+
+
+</resources>

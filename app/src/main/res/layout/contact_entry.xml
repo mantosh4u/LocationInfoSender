@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/name_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_contact_picture"
+            android:id="@+id/contact_entry_image"
+            android:paddingLeft="@dimen/icon_left_margin"
+            android:paddingRight="@dimen/icon_right_margin"
+            android:cropToPadding="false" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_entry"
+            android:hint="@string/name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/phone_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/name_container"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@android:drawable/stat_sys_phone_call"
+            android:id="@+id/contact_pnumber_image"
+            android:paddingLeft="@dimen/icon_left_margin"
+            android:paddingRight="@dimen/icon_right_margin"
+            android:background="@android:drawable/stat_sys_phone_call" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pnumber_entry"
+            android:inputType="phone"
+            android:hint="@string/phoneNumber"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emailaddress_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/phone_container"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@android:drawable/ic_dialog_email"
+            android:id="@+id/contact_emailid_image"
+            android:paddingLeft="@dimen/icon_left_margin"
+            android:paddingRight="@dimen/icon_right_margin"
+            android:background="@android:drawable/stat_sys_phone_call" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailaddress_entry"
+            android:inputType="textEmailAddress"
+            android:hint="@string/emailAddress"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/postaladdress_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/emailaddress_container"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@android:drawable/ic_menu_mylocation"
+            android:id="@+id/contact_paddress_image"
+            android:paddingLeft="@dimen/icon_left_margin"
+            android:paddingRight="@dimen/icon_right_margin"
+            android:background="@android:drawable/stat_sys_phone_call" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/postaladdress_entry"
+            android:inputType="textMultiLine"
+            android:hint="@string/postalAddress"/>/>
+    </LinearLayout>
+
+
+</RelativeLayout>

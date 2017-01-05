@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="@string/sms_frequency_key"
+        android:title="@string/sms_frequency_title"
+        android:summary="@string/screen_frequency_summary"
+        android:defaultValue="1200000"
+        android:entries="@array/smssend_timeout_entries"
+        android:entryValues="@array/smssend_timeout_values" />
+
+    <Preference
+        android:key="@string/contact_list_key"
+        android:title="@string/contact_list_title"
+        android:summary="@string/contact_list_summary"
+        android:id="@+id/preference"
+        android:selectable="true" >
+    </Preference>
+
+    <Preference
+        android:key="@string/messenger_type_selection_key"
+        android:title="@string/messenger_type_selection_title"
+        android:summary="@string/messenger_type_selection_summary"
+        android:selectable="true"
+        />
+
+    <CheckBoxPreference
+        android:key="@string/whether_to_send_SMS_key"
+        android:title="@string/whether_to_send_SMS_title"
+        android:summary="@string/whether_to_send_SMS_summary"
+        android:defaultValue="false" />
+
+
+</PreferenceScreen>
